@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: url('background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 4rem;
+    color: #fff;
+}
+
+header p {
+    font-size: 1.5rem;
+    color: #f0f0f0;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #6a5acd; /* Couleur du bouton modifiée */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #8a2be2; /* Effet survol pour le bouton */
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#competences .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.bar {
+    background: #ddd;
+    width: 300px;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(90deg, #6a5acd 0%, #8a2be2 100%); /* Dégradé pour les barres de progression */
+    transition: width 0.5s ease-in-out;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.event h3 {
+    color: #8a2be2; /* Couleur des titres des événements modifiée */
+}
+
+#contact a {
+    color: #6a5acd;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
